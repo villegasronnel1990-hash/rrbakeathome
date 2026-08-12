@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="R&R Bake at Home — homemade cakes, desserts, bilao favorites, snacks, frozen foods and more in Norzagaray, Bulacan.">
+  <title>R&R Bake at Home | Homemade Goodness</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="nav-wrap">
+      <a class="brand" href="#home">
+        <img src="logo.png" alt="R&R Bake at Home logo">
+        <span>R&R Bake at Home</span>
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav id="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#order">Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">🏠 Homemade • Fresh • Made with Love</span>
+        <h1>Sweet moments start at <span>R&R Bake at Home.</span></h1>
+        <p>Delicious homemade cakes, Filipino favorites, snacks and treats made for everyday cravings and special occasions.</p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#menu">View Our Menu</a>
+          <a class="btn secondary" href="#order">How to Order</a>
+        </div>
+        <div class="mini-info">
+          <span>📍 Norzagaray Homes, Bulacan</span>
+          <span>📞 0927 880 3573</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <img src="logo.png" alt="R&R Bake at Home">
+        <div class="badge">Baked & prepared with ❤️</div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <div class="section-heading">
+        <span class="eyebrow">OUR FAVORITES</span>
+        <h2>Something delicious for everyone</h2>
+        <p>Choose from our homemade favorites. Availability may vary, so message us for today's selection.</p>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <div class="icon">🎂</div>
+          <h3>Cakes & Desserts</h3>
+          <p>Customized cakes, bento cakes, cupcakes, cake tubs and leche flan for celebrations or simple sweet cravings.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍝</div>
+          <h3>Bilao Favorites</h3>
+          <p>Spaghetti, pancit bihon, palabok, carbonara and other Filipino party favorites—perfect for sharing.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍡</div>
+          <h3>Filipino Merienda</h3>
+          <p>Puto cheese, puto overload, kutsinta, pichi-pichi, sapin-sapin, maja, biko and more.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🧊</div>
+          <h3>Frozen Foods</h3>
+          <p>Convenient frozen favorites for busy days and rainy-season cravings. Ask us what's available today.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍪</div>
+          <h3>Snacks & Biscuits</h3>
+          <p>Cookies, biscuits, chips and snack-time favorites available at our store.</p>
+        </article>
+        <article class="card">
+          <div class="icon">🍯</div>
+          <h3>Pantry Favorites</h3>
+          <p>Palaman, dulce de leche, coconut jam, peanut spreads, turmeric powder and selected grocery treats.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section">
+      <div class="about-image">
+        <img src="logo.png" alt="R&R Bake at Home">
+      </div>
+      <div class="about-copy">
+        <span class="eyebrow">ABOUT R&R</span>
+        <h2>Homemade goodness, made for your family.</h2>
+        <p>R&R Bake at Home is a small home-based business serving homemade cakes, Filipino merienda, bilao meals, snacks and other favorites in the Norzagaray area.</p>
+        <p>Whether you're celebrating a birthday, preparing food for a family gathering, or simply looking for something tasty, we're happy to prepare something special for you.</p>
+        <div class="checks">
+          <span>✓ Homemade</span>
+          <span>✓ Made to order</span>
+          <span>✓ Great for celebrations</span>
+          <span>✓ Local small business</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="order" class="order section">
+      <div class="order-box">
+        <div>
+          <span class="eyebrow">READY TO ORDER?</span>
+          <h2>Let's make your next celebration extra special.</h2>
+          <p>Send us a message with the item you want, quantity, preferred date, and any customization. We'll confirm availability and pricing.</p>
+        </div>
+        <div class="order-actions">
+          <a class="btn primary" href="tel:+639278803573">📞 Call / Text</a>
+          <a class="btn secondary" href="https://www.facebook.com/" target="_blank" rel="noopener">💬 Facebook</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      <div>
+        <strong>R&R Bake at Home</strong>
+        <p>Homemade goodness, made with love. ❤️</p>
+      </div>
+      <div>
+        <p>📍 Norzagaray Homes, Norzagaray, Bulacan</p>
+        <p>📞 0927 880 3573</p>
+      </div>
+    </div>
+    <p class="copyright">© 2026 R&R Bake at Home. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.menu-btn');
+    const nav = document.querySelector('#nav');
+    menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+  </script>
+</body>
+</html>
